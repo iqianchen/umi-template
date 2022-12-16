@@ -1,0 +1,30 @@
+.search-table-list {
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .header-button-wrapper {
+      button {
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .default-width {
+    width: 180px;
+  }
+  .selected-item {
+    :global(.ant-select-selector) {
+      border-color: #40a9ff;
+      border-right-width: 1px !important;
+      outline: 0;
+      box-shadow: 0 0 0 2px rgb(24 144 255 / 20%);
+    }
+    :global(.ant-form-item-control-input .ant-input) {
+      border-color: #40a9ff;
+    }
+  }
+}

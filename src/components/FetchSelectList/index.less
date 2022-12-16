@@ -1,0 +1,26 @@
+.filter-search-list {
+  display: flex;
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  .filter-search {
+    flex: 1;
+  }
+
+  .filter-search-action {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    :global(.anticon) {
+      font-size: 18px;
+      color: #888;
+      margin-right: 8px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
